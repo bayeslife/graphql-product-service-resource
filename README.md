@@ -2,7 +2,7 @@
 
 I was interested to investigate graphql as I have noticed the difficulty with REST APIs that tend to be incomplete and inconsistent.
 
-Graphql turned out to be slightly different from what I expected but does offer a compelling mechanism to deliver documented complete and multi-utility API services.
+Graphql turned out to be slightly different from what I expected but does offer a compelling mechanism to deliver documented, complete , validate and multi-utility API services with minimal overhead.
 
 ## The example
 

@@ -2,7 +2,7 @@
 
 I was interested to investigate graphql as I have noticed the difficulty with REST APIs that tend to be incomplete and inconsistent.
 
-Graphql turned out to be slightly different from what I expected but does offer a compelling mechanism to deliver documented, complete , validate and multi-utility API services with minimal overhead.
+Graphql turned out to be slightly different from what I expected but does offer a compelling mechanism to deliver documented, complete , validated and multi-utility API services with minimal overhead.
 
 ## The example
 
@@ -38,13 +38,18 @@ var cfsrfss = [
   {source: 'cfs1', target: 'rfs1'},
   {source: 'cfs2', target: 'rfs2'}]
 
-//The one cfs depends on another.
+//One cfs depends on another.
 var cfscfss = [ {source: 'cfs1', target: 'cfs2'}]
 ```
 
 ## The project structure
 
-The implementation is in terms of 3 files
+The implementation is in terms of 4 files
+
+- index.js
+- data.js
+- schema.js
+- implementation.js
 
 The data.js file has the data set above.
 The schema.js declares the schema.
@@ -100,5 +105,7 @@ app.listen(4000);
 ## The result
 
 The result of this is the ability to query the data set using queries as per the demo.
+
+*Note the comments in the schema are reflected in the documentation.
 
 ![alt text](demo.gif "Demo")
